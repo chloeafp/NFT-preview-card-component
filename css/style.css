@@ -2,6 +2,10 @@ body {
   background-color: #0c131c;
   font-family: "Outfit";
   color: #577db2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 h2 {
@@ -15,13 +19,6 @@ p, td {
   font-size: 0.8rem;
 }
 
-hr {
-  border: none;
-  height: 1px;
-  opacity: 0.15;
-  background: white;
-  margin: 1rem 0;
-}
 
 table {
   width: 100%;
@@ -30,10 +27,12 @@ table {
 a {
   text-decoration: none;
   color: #fff;
+  transition: 0.5s ease;
 }
 
 a:hover {
   color: #01fff8;
+
 }
 
 
@@ -41,8 +40,6 @@ a:hover {
 
 .container-card {
   position: relative;
-  margin: auto;
-  margin-top: 10rem;
   background-color: #141c28;
   width: 15rem;
   height: 26rem;
@@ -108,6 +105,13 @@ a:hover {
 }
 
 
+/* Decorative line */
+.decorative-line {
+  border-bottom: 1px solid #fff;
+  opacity: 0.3;
+  margin:1rem 0 0.8rem 0;
+}
+
 /* Bottom of the card */
 
 .bottom-card {
@@ -141,8 +145,12 @@ a:hover {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+  transition: 0.5s ease;
 }
 
+.attribution a:hover{
+  color:#fff;
+}
 
 /* Mobile Responsive */
 
